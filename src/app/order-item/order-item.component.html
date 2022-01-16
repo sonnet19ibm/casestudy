@@ -1,0 +1,44 @@
+<<app-navigation></app-navigation>
+<div class="container ">
+    <br>
+    <div class="row">
+        <div class="offset-2 col-6 ">
+            <form class="form-horizontal shadow p-3 mb-5 bg-white rounded" #f="ngForm" (ngSubmit)=" formSubmit()" novalidate>
+                <div class="form-group">
+                    <label class="control-label col-m-10" for="orderitem">UNIT PRICE: </label>
+                    <div class="col-m-10">
+                        <input  class="form-control" name="address" [(ngModel)]="orderData.unitPrice" placeholder="UNIT PRICE"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-m-10" for="quantity">Quantity: </label>
+                    <div class="col-m-10">
+                        <input class="form-control" name="quantity" [(ngModel)]="orderData.quantity" placeholder="QUANTITY"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-m-10" for="productId">PRODUCT ID: </label>
+                    <div class="col-m-10">
+                        <input  class="form-control" name="productId" [(ngModel)]="orderData.productId" placeholder="PRODUCT Id"/>
+                    </div>
+                </div>
+                
+                <br />
+                
+                <div class="form-group">
+                    <div class="col-m-offset-2 col-m-4">
+
+                          <mat-card-actions style="text-align: center">
+                            
+                            <a [routerLink]="['/payment']">
+                            <button mat-raised-button color="primary">Proceed</button>
+                            </a>
+                          </mat-card-actions>
+                          <br><br>
+                         
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
