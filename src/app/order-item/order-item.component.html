@@ -1,4 +1,4 @@
-<<app-navigation></app-navigation>
+<app-navigation></app-navigation>
 <div class="container ">
     <br>
     <div class="row">
@@ -29,14 +29,29 @@
                     <div class="col-m-offset-2 col-m-4">
 
                           <mat-card-actions style="text-align: center">
-                            
-                            <a [routerLink]="['/payment']">
                             <button mat-raised-button color="primary">Proceed</button>
-                            </a>
                           </mat-card-actions>
                           <br><br>
                          
                     </div>
+                    <div class="col-m-offset-2 col-m-4">
+
+                        <mat-card-actions style="text-align: center">
+                            <a [routerLink]="['/product-category']">
+                          <button mat-raised-button color="primary">Continue Shopping</button>
+                            </a>
+                        </mat-card-actions>
+
+                        <mat-card-actions style="text-align: center">
+                            <a [routerLink]="['/list-order-items']">
+                          <button mat-raised-button color="primary">See Your Orders</button>
+                            </a>
+                        </mat-card-actions>
+
+
+                        <br><br>
+                       
+                  </div>
                 </div>
             </form>
         </div>

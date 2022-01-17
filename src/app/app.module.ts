@@ -21,6 +21,8 @@ import { AddressComponent } from './address/address.component';
 import { UpdateaddressComponent } from './updateaddress/updateaddress.component';
 import { DeleteaddressComponent } from './deleteaddress/deleteaddress.component';
 
+import { ListOrderItemsComponent } from './list-order-items/list-order-items.component';
+
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { DeleteaddressComponent } from './deleteaddress/deleteaddress.component'
     AddressComponent,
     UpdateaddressComponent,
     DeleteaddressComponent,
+    ListOrderItemsComponent,
   ],
   imports: [
     BrowserModule,

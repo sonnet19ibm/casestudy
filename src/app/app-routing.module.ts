@@ -12,6 +12,7 @@ import { ProductCategoryComponent } from './product-category/product-category.co
 import { RingsComponent } from './rings/rings.component';
 import { UpdateaddressComponent } from './updateaddress/updateaddress.component';
 import { WristwearComponent } from './wristwear/wristwear.component';
+import {ListOrderItemsComponent} from './list-order-items/list-order-items.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: '/home' },
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path:'payment',component:PaymentComponent},
   {path:'checkout',component:CheckoutComponent},
   {path:'updateaddress',component:UpdateaddressComponent},
-  {path:'deleteaddress',component:DeleteaddressComponent}
+  {path:'deleteaddress',component:DeleteaddressComponent},
+  {path:'list-order-items',component:ListOrderItemsComponent},
 ];
 
 @NgModule({
