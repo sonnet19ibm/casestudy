@@ -23,7 +23,7 @@ export class OrderItemComponent implements OnInit {
   
   formSubmit(){
     console.log('orderitem btn clicked');
-    this.router.navigate(['payment']);
+    this.router.navigate(['address']);
     if(
       this.orderData.quantity==0||
       this.orderData.quantity==null

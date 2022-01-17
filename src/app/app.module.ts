@@ -17,10 +17,8 @@ import { OrderItemComponent } from './order-item/order-item.component';
 import { PaymentComponent } from './payment/payment.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AddressComponent } from './address/address.component';
-
 import { UpdateaddressComponent } from './updateaddress/updateaddress.component';
 import { DeleteaddressComponent } from './deleteaddress/deleteaddress.component';
-
 import { ListOrderItemsComponent } from './list-order-items/list-order-items.component';
 
 

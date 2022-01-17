@@ -1,0 +1,7 @@
+.order-item{
+    background-image: url('/assets/img/order-item.png');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}

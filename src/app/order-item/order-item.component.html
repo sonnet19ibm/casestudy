@@ -1,8 +1,9 @@
 <app-navigation></app-navigation>
+<div class="order-item">
 <div class="container ">
     <br>
     <div class="row">
-        <div class="offset-2 col-6 ">
+        <div class="offset-3 col-5 ">
             <form class="form-horizontal shadow p-3 mb-5 bg-white rounded" #f="ngForm" (ngSubmit)=" formSubmit()" novalidate>
                 <div class="form-group">
                     <label class="control-label col-m-10" for="orderitem">UNIT PRICE: </label>
@@ -11,7 +12,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-m-10" for="quantity">Quantity: </label>
+                    <label class="control-label col-m-10" for="quantity">QUANTITY: </label>
                     <div class="col-m-10">
                         <input class="form-control" name="quantity" [(ngModel)]="orderData.quantity" placeholder="QUANTITY"/>
                     </div>
@@ -29,31 +30,31 @@
                     <div class="col-m-offset-2 col-m-4">
 
                           <mat-card-actions style="text-align: center">
-                            <button mat-raised-button color="primary">Proceed</button>
+                            <button mat-raised-button color="primary">PROCEED</button>
                           </mat-card-actions>
                           <br><br>
                          
                     </div>
-                    <div class="col-m-offset-2 col-m-4">
+                    <div class="col-m-offset-2 col-m-4"> 
+                         <mat-card-actions style="text-align: center">
+                            <a [routerLink]="['/list-order-items']">
+                             <button mat-raised-button color="primary">CART-ITEMS</button>
+                             </a>
+                        </mat-card-actions>
+                         <br><br>
+
+
 
                         <mat-card-actions style="text-align: center">
                             <a [routerLink]="['/product-category']">
-                          <button mat-raised-button color="primary">Continue Shopping</button>
+                                <button mat-raised-button color="primary">CONTINUE SHOPPING</button>
                             </a>
                         </mat-card-actions>
-
-                        <mat-card-actions style="text-align: center">
-                            <a [routerLink]="['/list-order-items']">
-                          <button mat-raised-button color="primary">See Your Orders</button>
-                            </a>
-                        </mat-card-actions>
-
-
                         <br><br>
-                       
-                  </div>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
+</div>
 </div>
